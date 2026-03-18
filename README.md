@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-blue?style=flat-square)](#)
-[![Reports](https://img.shields.io/badge/in--depth%20reports-14-orange?style=flat-square)](reports/)
+[![Reports](https://img.shields.io/badge/in--depth%20reports-15-orange?style=flat-square)](reports/)
 
 Autonomous research systems have gone from weekend experiments to NeurIPS Spotlight papers in under two years. This repository catalogues 30+ active projects across the full spectrum — lightweight literature scrapers, multi-agent experiment runners, and end-to-end systems that can take a vague research direction and output a reviewable manuscript — together with a [capability comparison matrix](#-capability-matrix), a [pipeline map](#️-research-automation-landscape), a [tool selection guide](#-how-to-choose-the-right-tool), and **[in-depth technical reports](reports/)** for the most impactful systems.
 
@@ -195,6 +195,7 @@ The `reports/` folder is the core value of this repository. Each file contains a
 | 🏆 | [openhands.md](reports/openhands.md) | OpenHands | Code Agent | 72% SWE-Bench Verified, composable agent architecture |
 | 🌟 | [swe-agent.md](reports/swe-agent.md) | SWE-agent | Code Agent | Agent-Computer Interface (ACI), Princeton NLP design |
 | 🔬 | [autogpt.md](reports/autogpt.md) | AutoGPT | Code Agent | Historical context, Forge platform, Agent Protocol |
+| 🏆 | [autoresearch.md](reports/autoresearch.md) | autoresearch | End-to-End | 630-line self-referential experiment loop, Karpathy design philosophy |
 
 ---
 
@@ -358,21 +359,21 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
 
 ## 📈 Star History
 
-Star growth of the **top-starred projects** in this list since their respective launch dates.
+> The free `api.star-history.com` embed renders one repo at a time reliably. Charts are split by scale to keep all lines readable. Click any chart to open the full interactive view.
 
-<a href="https://star-history.com/#Significant-Gravitas/AutoGPT&All-Hands-AI/OpenHands&Aider-AI/aider&assafelovic/gpt-researcher&stanford-oval/storm&SWE-agent/SWE-agent&SakanaAI/AI-Scientist&bytedance/deer-flow&Future-House/paper-qa&karpathy/autoresearch&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT,All-Hands-AI/OpenHands,Aider-AI/aider,assafelovic/gpt-researcher,stanford-oval/storm,SWE-agent/SWE-agent,SakanaAI/AI-Scientist,bytedance/deer-flow,Future-House/paper-qa,karpathy/autoresearch&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT,All-Hands-AI/OpenHands,Aider-AI/aider,assafelovic/gpt-researcher,stanford-oval/storm,SWE-agent/SWE-agent,SakanaAI/AI-Scientist,bytedance/deer-flow,Future-House/paper-qa,karpathy/autoresearch&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT,All-Hands-AI/OpenHands,Aider-AI/aider,assafelovic/gpt-researcher,stanford-oval/storm,SWE-agent/SWE-agent,SakanaAI/AI-Scientist,bytedance/deer-flow,Future-House/paper-qa,karpathy/autoresearch&type=Date" />
- </picture>
-</a>
+**AutoGPT** (170k+ ⭐ — shown separately due to scale):
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date)](https://star-history.com/#Significant-Gravitas/AutoGPT&Date)
+
+**Research-specific tools** (comparable scale — OpenHands · Aider · GPT Researcher · STORM · SWE-agent · AI-Scientist · DeerFlow · PaperQA2):
+
+[![Star History Chart](https://api.star-history.com/svg?repos=All-Hands-AI/OpenHands,Aider-AI/aider,assafelovic/gpt-researcher,stanford-oval/storm,SWE-agent/SWE-agent,SakanaAI/AI-Scientist,bytedance/deer-flow,Future-House/paper-qa&type=Date)](https://star-history.com/#All-Hands-AI/OpenHands&Aider-AI/aider&assafelovic/gpt-researcher&stanford-oval/storm&SWE-agent/SWE-agent&SakanaAI/AI-Scientist&bytedance/deer-flow&Future-House/paper-qa&Date)
 
 ---
 
 <div align="center">
 
-Maintained by **[Peizheng Li](https://github.com/peizhli)** · Licensed under [MIT](LICENSE)
+Maintained by **[Peizheng Li](https://github.com/EdwardLeeLPZ)** · Licensed under [MIT](LICENSE)
 
 *If this repository helped your research, please consider giving it a ⭐*
 
