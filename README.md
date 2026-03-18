@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-blue?style=flat-square)](#)
-[![Reports](https://img.shields.io/badge/in--depth%20reports-18-orange?style=flat-square)](reports/)
+[![Reports](https://img.shields.io/badge/in--depth%20reports-21-orange?style=flat-square)](reports/)
 
 Autonomous research systems have gone from weekend experiments to NeurIPS Spotlight papers in under two years. This repository catalogues 30+ active projects across the full spectrum — lightweight literature scrapers, multi-agent experiment runners, and end-to-end systems that can take a vague research direction and output a reviewable manuscript — together with a [capability comparison matrix](#-capability-matrix), a [pipeline map](#️-research-automation-landscape), a [tool selection guide](#-how-to-choose-the-right-tool), and **[in-depth technical reports](reports/)** for the most impactful systems.
 
@@ -68,6 +68,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
 | 🏆 | [deep-research](https://github.com/dzhng/deep-research) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [STORM](https://github.com/stanford-oval/storm) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [MiroThinker](https://github.com/MiroMindAI/MiroThinker) | ✅ | ❌ | ❌ | ✅ | ❌ | ⚠️ | ✅ |
 | 🌟 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
 | 🌟 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | 🔬 | [MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
@@ -79,6 +80,8 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🔬 | [Biomni](https://github.com/snap-stanford/Biomni) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ⚠️ |
 | 🔬 | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | ⚠️ | ❌ | ✅ | ❌ | ❌ | ❌ | ⚠️ |
 | 🔬 | [Open Deep Research](https://github.com/langchain-ai/open_deep_research) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ❌ | ✅ |
+| 🔬 | [II-Researcher](https://github.com/Intelligent-Internet/ii-researcher) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🔬 | [AutoDidact](https://github.com/dCaples/AutoDidact) | ⚠️ | ✅ | ❌ | ❌ | ⚠️ | ❌ | ✅ |
 
 > **Tier legend:**  🏆 Landmark — defined or significantly shaped the field  ·  🌟 Flagship — mature, widely adopted, strong results  ·  🔬 Notable — active, specialized, or emerging  
 > **Capability legend:**  ✅ Native  ·  ⚠️ Partial / requires setup  ·  ❌ Not supported
@@ -112,6 +115,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | **[deep-research](https://github.com/dzhng/deep-research)**<br><sub>dzhng (Aomni) · 2025</sub> | ![](https://img.shields.io/github/stars/dzhng/deep-research?style=social) | Recursive depth/breadth search with Firecrawl + LLM extraction; <500 LoC reference scaffold | Most-forked deep-research scaffold; direct inspiration for Open Deep Research and DeerFlow | [📄](reports/deep-research.md) |
 | 🏆 | **[STORM](https://github.com/stanford-oval/storm)**<br><sub>Stanford OVAL · NAACL 2024</sub> | ![](https://img.shields.io/github/stars/stanford-oval/storm?style=social) | Multi-perspective question asking + DSPy pipeline | Generates full Wikipedia-style articles with citations; Co-STORM for collaborative mode | [📄](reports/storm.md) |
 | 🏆 | **[GPT Researcher](https://github.com/assafelovic/gpt-researcher)**<br><sub>assafelovic · 2023</sub> | ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social) | Parallel web scraping agents + LangGraph orchestration | Outputs 5–6 page cited report (PDF / Docx / MD); MCP server support | [📄](reports/gpt-researcher.md) |
+| 🏆 | **[MiroThinker](https://github.com/MiroMindAI/MiroThinker)**<br><sub>MiroMind AI · 2025</sub> | ![](https://img.shields.io/github/stars/MiroMindAI/MiroThinker?style=social) | RL-trained open-source agent (30B / 235B) with 256K context + 300 tool calls | SOTA on BrowseComp (88.2 H1, 74.0 open); step-verifiable long-chain reasoning | [📄](reports/mirothinker.md) |
 | 🌟 | **[CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro)**<br><sub>Tencent AI Lab · 2025</sub> | ![](https://img.shields.io/github/stars/Tencent/CognitiveKernel-Pro?style=social) | SFT-trained Qwen3-8B + Playwright web engine + multi-agent (web/file/main) | Outperforms RL-trained WebDancer/WebSailor on GAIA using SFT-only recipe; fully open model & data | [📄](reports/cognitivekernel-pro.md) |
 | 🌟 | **[DeerFlow](https://github.com/bytedance/deer-flow)**<br><sub>ByteDance · 2025</sub> | ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=social) | Sub-agent orchestration with persistent memory + InfoQuest + LangGraph | Uniquely combines deep research with code generation in one pipeline | [📄](reports/deerflow.md) |
 | 🌟 | **[PaperQA2](https://github.com/Future-House/paper-qa)**<br><sub>Future House · ICLR 2024</sub> | ![](https://img.shields.io/github/stars/Future-House/paper-qa?style=social) | Iterative RAG over full-text PDFs using tantivy search index | Highest-accuracy Q&A from local scientific papers; outperforms Perplexity Pro | [📄](reports/paperqa2.md) |
@@ -119,6 +123,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🌟 | **[Open Deep Research](https://github.com/langchain-ai/open_deep_research)**<br><sub>LangChain · 2025</sub> | ![](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=social) | LangGraph workflow + MCP tool plugins + LangSmith tracing | Reference implementation from LangChain; highly configurable | [📄](reports/open-deep-research.md) |
 | 🔬 | **[Tongyi DeepResearch](https://github.com/Alibaba-NLP/DeepResearch)**<br><sub>Alibaba NLP · 2025</sub> | ![](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social) | RL-trained agentic LLM (30.5B, GRPO) | SOTA on long-horizon information-seeking benchmarks; open-weight model | — |
 | 🔬 | **[DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent)**<br><sub>Skywork AI</sub> | ![](https://img.shields.io/github/stars/SkyworkAI/DeepResearchAgent?style=social) | Hierarchical multi-agent + Autogenesis self-evolution | Planning agent coordinates specialized lower-level agents | — |
+| 🔬 | **[II-Researcher](https://github.com/Intelligent-Internet/ii-researcher)**<br><sub>Intelligent Internet · 2025</sub> | ![](https://img.shields.io/github/stars/Intelligent-Internet/ii-researcher?style=social) | BAML-structured LLM functions + multi-provider web search + async reflection loop | 84.12% on Frames multi-hop benchmark; MCP server support; pip-installable | [📄](reports/ii-researcher.md) |
 
 ---
 
@@ -133,6 +138,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🌟 | **[Aider](https://github.com/Aider-AI/aider)**<br><sub>Aider-AI · 2023</sub> | ![](https://img.shields.io/github/stars/Aider-AI/aider?style=social) | AI pair programming in terminal with native Git integration | ~18% on SWE-Bench; fastest daily iteration loop; supports 60+ models | — |
 | 🔬 | **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)**<br><sub>Significant Gravitas · 2023</sub> | ![](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social) | Plugin-based autonomous agent platform + Forge builder framework | Historically seminal; sparked the autonomous agent movement | [📄](reports/autogpt.md) |
 | 🔬 | **[AIDE](https://github.com/WecoAI/aideml)**<br><sub>WecoAI · 2024</sub> | ![](https://img.shields.io/github/stars/WecoAI/aideml?style=social) | Tree-search over ML solution space with iterative code refinement | ML-experiment-specific; used internally by AI-Scientist-v2 | — |
+| 🔬 | **[AutoDidact](https://github.com/dCaples/AutoDidact)**<br><sub>dCaples · 2025</sub> | ![](https://img.shields.io/github/stars/dCaples/AutoDidact?style=social) | GRPO RL + self-generated Q&A pairs to bootstrap research-agent LLMs on custom corpora | Doubles Llama-8B accuracy in 1 hr on single RTX 4090; fully local open-source pipeline | [📄](reports/autodidact.md) |
 
 ---
 
@@ -160,6 +166,8 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | **MLE-Bench** | OpenAI | ML engineering quality on Kaggle competition tasks | [github.com/openai/mle-bench](https://github.com/openai/mle-bench) |
 | **CORE-Bench** | — | Computational reproducibility of published research | — |
 | **AI-Scientist Eval** | SakanaAI | Paper quality via automated + human review | [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) |
+| **MLGym** | Meta AI Research | 13 open-ended AI research tasks (CV, NLP, RL, game theory) for benchmarking research agents | [github.com/facebookresearch/MLGym](https://github.com/facebookresearch/MLGym) · [arXiv:2502.14499](https://arxiv.org/abs/2502.14499) |
+| **DeepResearch Bench** | Ayanami et al. | Comprehensive multi-domain benchmark for deep research agent quality | [github.com/Ayanami0730/deep_research_bench](https://github.com/Ayanami0730/deep_research_bench) |
 
 > 💡 Contributions to this section are especially welcome — if you know of additional evaluation suites for research agents, please [open an issue](../../issues) or submit a PR.
 
@@ -205,6 +213,9 @@ The `reports/` folder is the core value of this repository. Each file contains a
 | 🏆 | [deep-research.md](reports/deep-research.md) | deep-research | Literature | Recursive depth/breadth scaffold, Firecrawl+Exa, TypeScript reference |
 | 🌟 | [cognitivekernel-pro.md](reports/cognitivekernel-pro.md) | CognitiveKernel-Pro | Literature | SFT-trained Qwen3-8B, Playwright web engine, Tencent AI Lab |
 | 🔬 | [medresearcher-r1.md](reports/medresearcher-r1.md) | MedResearcher-R1 | End-to-End | Medical KG-grounded trajectory synthesis, 32B model, MedBrowseComp SOTA |
+| 🏆 | [mirothinker.md](reports/mirothinker.md) | MiroThinker | Literature | RL-trained 30B/235B open models, 88.2 BrowseComp, interactive scaling |
+| 🔬 | [autodidact.md](reports/autodidact.md) | AutoDidact | Code Agent | GRPO self-bootstrapping, Llama-8B, single-GPU research agent training |
+| 🔬 | [ii-researcher.md](reports/ii-researcher.md) | II-Researcher | Literature | BAML structured LLM functions, 84.12% Frames, async multi-provider search |
 
 ---
 

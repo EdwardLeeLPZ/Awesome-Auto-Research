@@ -57,6 +57,8 @@ Each report covers:
 | [openscholar.md](openscholar.md) | OpenScholar | 45M paper retrieval-augmented LM; published in Nature |
 | [open-deep-research.md](open-deep-research.md) | Open Deep Research (LangChain) | Official LangChain deep research reference implementation |
 | [cognitivekernel-pro.md](cognitivekernel-pro.md) | CognitiveKernel-Pro (Tencent AI Lab) | SFT-trained Qwen3-8B deep research agent; outperforms RL-trained models on GAIA |
+| [mirothinker.md](mirothinker.md) | MiroThinker (MiroMind AI) | RL-trained open-source research agents (30B/235B); SOTA BrowseComp 88.2 |
+| [ii-researcher.md](ii-researcher.md) | II-Researcher (Intelligent Internet) | BAML-powered deep search agent; 84.12% on Frames; MCP support |
 
 ### ⚙️ Automated Experiment & Code Agents
 
@@ -65,6 +67,7 @@ Each report covers:
 | [openhands.md](openhands.md) | OpenHands (All-Hands AI) | AI software dev platform; 72% on SWE-Bench Verified |
 | [swe-agent.md](swe-agent.md) | SWE-agent (Princeton NLP) | Agent-Computer Interface for structured software engineering |
 | [autogpt.md](autogpt.md) | AutoGPT | Pioneering autonomous agent framework that launched the agent movement |
+| [autodidact.md](autodidact.md) | AutoDidact (dCaples) | GRPO RL self-bootstrapping to train research LLMs on custom corpora; single GPU |
 
 ---
 
