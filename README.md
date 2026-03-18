@@ -61,27 +61,24 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 
 | Tier | System | Lit Review | Hypothesis | Code Exec | Paper Writing | Peer Review | Multimodal | Fully Local |
 |:----:|--------|:----------:|:----------:|:---------:|:-------------:|:-----------:|:----------:|:-----------:|
-| 🏆 | [autoresearch](https://github.com/karpathy/autoresearch) | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
-| 🏆 | [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
-| 🏆 | [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
-| 🏆 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
-| 🏆 | [deep-research](https://github.com/dzhng/deep-research) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [autoresearch](https://github.com/karpathy/autoresearch) | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| 🏆 | [DeerFlow](https://github.com/bytedance/deer-flow) | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [STORM](https://github.com/stanford-oval/storm) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| 🏆 | [deep-research](https://github.com/dzhng/deep-research) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
+| 🏆 | [Open Deep Research](https://github.com/langchain-ai/open_deep_research) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ❌ | ✅ |
+| 🏆 | [PaperQA2](https://github.com/Future-House/paper-qa) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 🏆 | [MiroThinker](https://github.com/MiroMindAI/MiroThinker) | ✅ | ❌ | ❌ | ✅ | ❌ | ⚠️ | ✅ |
-| 🌟 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
-| 🌟 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
-| 🔬 | [MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| 🌟 | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
-| 🌟 | [DeerFlow](https://github.com/bytedance/deer-flow) | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
-| 🌟 | [PaperQA2](https://github.com/Future-House/paper-qa) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| 🏆 | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
+| 🏆 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| 🌟 | [Biomni](https://github.com/snap-stanford/Biomni) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ⚠️ |
+| 🌟 | [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
 | 🌟 | [OpenScholar](https://github.com/AkariAsai/OpenScholar) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| 🌟 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
-| 🔬 | [Biomni](https://github.com/snap-stanford/Biomni) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ⚠️ |
-| 🔬 | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | ⚠️ | ❌ | ✅ | ❌ | ❌ | ❌ | ⚠️ |
-| 🔬 | [Open Deep Research](https://github.com/langchain-ai/open_deep_research) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ❌ | ✅ |
-| 🔬 | [II-Researcher](https://github.com/Intelligent-Internet/ii-researcher) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
-| 🔬 | [AutoDidact](https://github.com/dCaples/AutoDidact) | ⚠️ | ✅ | ❌ | ❌ | ⚠️ | ❌ | ✅ |
+| 🌟 | [AutoDidact](https://github.com/dCaples/AutoDidact) | ⚠️ | ✅ | ❌ | ❌ | ⚠️ | ❌ | ✅ |
+| 🌟 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
 
 > **Tier legend:**  🏆 Landmark — defined or significantly shaped the field  ·  🌟 Flagship — mature, widely adopted, strong results  ·  🔬 Notable — active, specialized, or emerging  
 > **Capability legend:**  ✅ Native  ·  ⚠️ Partial / requires setup  ·  ❌ Not supported
@@ -117,7 +114,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | **[GPT Researcher](https://github.com/assafelovic/gpt-researcher)**<br><sub>assafelovic · 2023</sub> | ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social) | Parallel web scraping agents + LangGraph orchestration | Outputs 5–6 page cited report (PDF / Docx / MD); MCP server support | [📄](reports/gpt-researcher.md) |
 | 🏆 | **[MiroThinker](https://github.com/MiroMindAI/MiroThinker)**<br><sub>MiroMind AI · 2025</sub> | ![](https://img.shields.io/github/stars/MiroMindAI/MiroThinker?style=social) | RL-trained open-source agent (30B / 235B) with 256K context + 300 tool calls | SOTA on BrowseComp (88.2 H1, 74.0 open); step-verifiable long-chain reasoning | [📄](reports/mirothinker.md) |
 | 🌟 | **[CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro)**<br><sub>Tencent AI Lab · 2025</sub> | ![](https://img.shields.io/github/stars/Tencent/CognitiveKernel-Pro?style=social) | SFT-trained Qwen3-8B + Playwright web engine + multi-agent (web/file/main) | Outperforms RL-trained WebDancer/WebSailor on GAIA using SFT-only recipe; fully open model & data | [📄](reports/cognitivekernel-pro.md) |
-| 🌟 | **[DeerFlow](https://github.com/bytedance/deer-flow)**<br><sub>ByteDance · 2025</sub> | ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=social) | Sub-agent orchestration with persistent memory + InfoQuest + LangGraph | Uniquely combines deep research with code generation in one pipeline | [📄](reports/deerflow.md) |
+| 🏆 | **[DeerFlow](https://github.com/bytedance/deer-flow)**<br><sub>ByteDance · 2025</sub> | ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=social) | Sub-agent orchestration with persistent memory + InfoQuest + LangGraph | Uniquely combines deep research with code generation in one pipeline | [📄](reports/deerflow.md) |
 | 🌟 | **[PaperQA2](https://github.com/Future-House/paper-qa)**<br><sub>Future House · ICLR 2024</sub> | ![](https://img.shields.io/github/stars/Future-House/paper-qa?style=social) | Iterative RAG over full-text PDFs using tantivy search index | Highest-accuracy Q&A from local scientific papers; outperforms Perplexity Pro | [📄](reports/paperqa2.md) |
 | 🌟 | **[OpenScholar](https://github.com/AkariAsai/OpenScholar)**<br><sub>Asai et al. · Nature 2024</sub> | ![](https://img.shields.io/github/stars/AkariAsai/OpenScholar?style=social) | Dense retrieval (Contriever) over 45M open-access papers | Outperforms PaperQA2 on scientific Q&A; evidence-grounded answers | [📄](reports/openscholar.md) |
 | 🌟 | **[Open Deep Research](https://github.com/langchain-ai/open_deep_research)**<br><sub>LangChain · 2025</sub> | ![](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=social) | LangGraph workflow + MCP tool plugins + LangSmith tracing | Reference implementation from LangChain; highly configurable | [📄](reports/open-deep-research.md) |
@@ -202,7 +199,7 @@ The `reports/` folder is the core value of this repository. Each file contains a
 | 🔬 | [biomni.md](reports/biomni.md) | Biomni | End-to-End | Biomedical datalake, know-how library, multimodal inputs |
 | 🏆 | [storm.md](reports/storm.md) | STORM | Literature | DSPy pipeline, multi-perspective QA, Co-STORM |
 | 🏆 | [gpt-researcher.md](reports/gpt-researcher.md) | GPT Researcher | Literature | Parallel scraping, LangGraph orchestration, MCP |
-| 🌟 | [deerflow.md](reports/deerflow.md) | DeerFlow | Literature | ByteDance InfoQuest, sub-agent memory, code execution |
+| 🏆 | [deerflow.md](reports/deerflow.md) | DeerFlow | Literature | ByteDance InfoQuest, sub-agent memory, code execution |
 | 🌟 | [paperqa2.md](reports/paperqa2.md) | PaperQA2 | Literature | Iterative retrieval, tantivy indexing, ICLR results |
 | 🌟 | [openscholar.md](reports/openscholar.md) | OpenScholar | Literature | 45M paper index, Contriever dense retrieval, Nature paper |
 | 🌟 | [open-deep-research.md](reports/open-deep-research.md) | Open Deep Research | Literature | LangChain MCP integration, LangSmith tracing |

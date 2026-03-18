@@ -1,0 +1,8 @@
+# Runtime logs — never commit
+logs/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+*.swp

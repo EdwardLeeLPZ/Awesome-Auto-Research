@@ -67,11 +67,31 @@ Every project section uses this exact column order:
 
 ## Capability Matrix (top of README, after pipeline map)
 
-Columns: `System | Query | Retrieval | Analysis | Writing | Code | Multi-domain | Open-source`
+Columns: `Tier | System | Lit Review | Hypothesis | Code Exec | Paper Writing | Peer Review | Multimodal | Fully Local`
 
 Values: `✅` full support · `⚠️` partial · `❌` not supported
 
-When adding a new system, add a row here too.
+### Curation Rules (IMPORTANT)
+
+The Capability Matrix is a **curated highlight**, NOT a full mirror of all tables.
+
+1. **Size limit**: Keep at most **18 entries** (ideally 15–18). If the repo grows beyond 18 qualifying systems, remove the lowest-starred entries first.
+
+2. **Selection**: Include only the **top systems by star count**. To determine inclusion rank, use: `gh api /repos/OWNER/REPO --jq '.stargazerCount'`. Systems below ~500 stars may be excluded from the matrix even if they appear in the section tables.
+
+3. **Sort order** (strictly enforced):
+   - First group: all 🏆 entries, sorted by stars **descending**
+   - Second group: all 🌟 entries, sorted by stars **descending**
+   - Third group: all 🔬 entries, sorted by stars **descending**
+
+4. **Tier consistency**: If a system's star count has crossed a tier boundary since last update, correct the tier in both the matrix AND its section table row.
+
+5. **Do NOT add** a new system to the matrix if it would push the total past 18 without removing one. Remove the currently lowest-starred matrix entry first.
+
+6. **General-purpose agents** (e.g. AutoGPT at 182k stars) that are not primarily research automation tools should be **excluded from the matrix** even if listed in section tables.
+
+When adding a new system to the matrix, also verify all existing entries still meet their tier criteria (stars may have changed).
+
 
 ---
 

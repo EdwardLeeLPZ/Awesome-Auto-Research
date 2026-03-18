@@ -24,6 +24,19 @@ MODEL="${COPILOT_MODEL:-claude-sonnet-4.6}"
 
 DATE=$(date +%Y-%m-%d)
 
+# ─── 认证：cron 环境无交互 session，需显式注入 GH_TOKEN ──────────────────────
+# copilot --acp 的 session/new 需要 GitHub 认证，cron 下默认不继承 token。
+# gh auth token 读取 ~/.config/gh/hosts.yml（HOME 在 user crontab 下正常可用）。
+if [[ -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
+    _gh_token=$(gh auth token 2>/dev/null || true)
+    if [[ -n "$_gh_token" ]]; then
+        export GH_TOKEN="$_gh_token"
+        echo "[daily_update] GH_TOKEN injected via gh auth token"
+    else
+        echo "[daily_update] WARNING: could not obtain GH_TOKEN — ACP session/new may fail" >&2
+    fi
+fi
+
 # ─── 前置检查 ─────────────────────────────────────────────────────────────────
 if [[ ! -f "$ACP_SCRIPT" ]]; then
     echo "[daily_update] ERROR: ACP script not found: $ACP_SCRIPT" >&2
