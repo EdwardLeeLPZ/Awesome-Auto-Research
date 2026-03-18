@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-blue?style=flat-square)](#)
-[![Reports](https://img.shields.io/badge/in--depth%20reports-15-orange?style=flat-square)](reports/)
+[![Reports](https://img.shields.io/badge/in--depth%20reports-18-orange?style=flat-square)](reports/)
 
 Autonomous research systems have gone from weekend experiments to NeurIPS Spotlight papers in under two years. This repository catalogues 30+ active projects across the full spectrum — lightweight literature scrapers, multi-agent experiment runners, and end-to-end systems that can take a vague research direction and output a reviewable manuscript — together with a [capability comparison matrix](#-capability-matrix), a [pipeline map](#️-research-automation-landscape), a [tool selection guide](#-how-to-choose-the-right-tool), and **[in-depth technical reports](reports/)** for the most impactful systems.
 
@@ -66,8 +66,11 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
 | 🏆 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| 🏆 | [deep-research](https://github.com/dzhng/deep-research) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [STORM](https://github.com/stanford-oval/storm) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
+| 🌟 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
 | 🌟 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| 🔬 | [MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 🌟 | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 | 🌟 | [DeerFlow](https://github.com/bytedance/deer-flow) | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 | 🌟 | [PaperQA2](https://github.com/Future-House/paper-qa) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
@@ -93,6 +96,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | **[AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)**<br><sub>SakanaAI · 2025</sub> | ![](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=social) | BFTS (beam-search agentic tree search) + AIDE for code generation | First AI-written paper accepted through standard peer review | [📄](reports/ai-scientist-v2.md) |
 | 🌟 | **[AI-Researcher](https://github.com/HKUDS/AI-Researcher)**<br><sub>HKUDS · NeurIPS 2025 Spotlight</sub> | ![](https://img.shields.io/github/stars/HKUDS/AI-Researcher?style=social) | LiteLLM multi-provider + Docker-sandboxed execution + Gradio UI | Broadest LLM compatibility; strong reproducibility focus | [📄](reports/ai-researcher.md) |
 | 🌟 | **[Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory)**<br><sub>SamuelSchmidgall · 2024</sub> | ![](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=social) | Role-specialized multi-agent: Professor → PhD Student → Reviewer | arXiv + HuggingFace integration for literature and datasets | [📄](reports/agent-laboratory.md) |
+| 🔬 | **[MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1)**<br><sub>AQ-MedAI · 2025</sub> | ![](https://img.shields.io/github/stars/AQ-MedAI/MedResearcher-R1?style=social) | KG-grounded multi-hop QA synthesis + trajectory generation for medical AI training | SOTA on MedBrowseComp; open 32B model + full training data released | [📄](reports/medresearcher-r1.md) |
 | 🔬 | **[Biomni](https://github.com/snap-stanford/Biomni)**<br><sub>Stanford SNAP · 2025</sub> | ![](https://img.shields.io/github/stars/snap-stanford/Biomni?style=social) | Biomedical datalake + know-how library + sandboxed code execution | Domain-specialized for biology & medicine; multimodal inputs | [📄](reports/biomni.md) |
 | 🔬 | **[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)**<br><sub>wanshuiyin</sub> | ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=social) | Claude Code + MCP servers; runs overnight unattended | Cross-model review loops; Zotero + Obsidian integration | — |
 | 🔬 | **[Idea2Paper](https://github.com/AgentAlphaAGI/Idea2Paper)**<br><sub>AgentAlphaAGI</sub> | ![](https://img.shields.io/github/stars/AgentAlphaAGI/Idea2Paper?style=social) | Multi-agent + Knowledge Graph alignment for novelty checking | Semantic Scholar + arXiv grounding; idea → draft pipeline | — |
@@ -105,8 +109,10 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 
 | Tier | Project | Stars | Core Approach | Notes | Report |
 |:----:|---------|-------|---------------|-------|:------:|
+| 🏆 | **[deep-research](https://github.com/dzhng/deep-research)**<br><sub>dzhng (Aomni) · 2025</sub> | ![](https://img.shields.io/github/stars/dzhng/deep-research?style=social) | Recursive depth/breadth search with Firecrawl + LLM extraction; <500 LoC reference scaffold | Most-forked deep-research scaffold; direct inspiration for Open Deep Research and DeerFlow | [📄](reports/deep-research.md) |
 | 🏆 | **[STORM](https://github.com/stanford-oval/storm)**<br><sub>Stanford OVAL · NAACL 2024</sub> | ![](https://img.shields.io/github/stars/stanford-oval/storm?style=social) | Multi-perspective question asking + DSPy pipeline | Generates full Wikipedia-style articles with citations; Co-STORM for collaborative mode | [📄](reports/storm.md) |
 | 🏆 | **[GPT Researcher](https://github.com/assafelovic/gpt-researcher)**<br><sub>assafelovic · 2023</sub> | ![](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social) | Parallel web scraping agents + LangGraph orchestration | Outputs 5–6 page cited report (PDF / Docx / MD); MCP server support | [📄](reports/gpt-researcher.md) |
+| 🌟 | **[CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro)**<br><sub>Tencent AI Lab · 2025</sub> | ![](https://img.shields.io/github/stars/Tencent/CognitiveKernel-Pro?style=social) | SFT-trained Qwen3-8B + Playwright web engine + multi-agent (web/file/main) | Outperforms RL-trained WebDancer/WebSailor on GAIA using SFT-only recipe; fully open model & data | [📄](reports/cognitivekernel-pro.md) |
 | 🌟 | **[DeerFlow](https://github.com/bytedance/deer-flow)**<br><sub>ByteDance · 2025</sub> | ![](https://img.shields.io/github/stars/bytedance/deer-flow?style=social) | Sub-agent orchestration with persistent memory + InfoQuest + LangGraph | Uniquely combines deep research with code generation in one pipeline | [📄](reports/deerflow.md) |
 | 🌟 | **[PaperQA2](https://github.com/Future-House/paper-qa)**<br><sub>Future House · ICLR 2024</sub> | ![](https://img.shields.io/github/stars/Future-House/paper-qa?style=social) | Iterative RAG over full-text PDFs using tantivy search index | Highest-accuracy Q&A from local scientific papers; outperforms Perplexity Pro | [📄](reports/paperqa2.md) |
 | 🌟 | **[OpenScholar](https://github.com/AkariAsai/OpenScholar)**<br><sub>Asai et al. · Nature 2024</sub> | ![](https://img.shields.io/github/stars/AkariAsai/OpenScholar?style=social) | Dense retrieval (Contriever) over 45M open-access papers | Outperforms PaperQA2 on scientific Q&A; evidence-grounded answers | [📄](reports/openscholar.md) |
@@ -196,6 +202,9 @@ The `reports/` folder is the core value of this repository. Each file contains a
 | 🌟 | [swe-agent.md](reports/swe-agent.md) | SWE-agent | Code Agent | Agent-Computer Interface (ACI), Princeton NLP design |
 | 🔬 | [autogpt.md](reports/autogpt.md) | AutoGPT | Code Agent | Historical context, Forge platform, Agent Protocol |
 | 🏆 | [autoresearch.md](reports/autoresearch.md) | autoresearch | End-to-End | 630-line self-referential experiment loop, Karpathy design philosophy |
+| 🏆 | [deep-research.md](reports/deep-research.md) | deep-research | Literature | Recursive depth/breadth scaffold, Firecrawl+Exa, TypeScript reference |
+| 🌟 | [cognitivekernel-pro.md](reports/cognitivekernel-pro.md) | CognitiveKernel-Pro | Literature | SFT-trained Qwen3-8B, Playwright web engine, Tencent AI Lab |
+| 🔬 | [medresearcher-r1.md](reports/medresearcher-r1.md) | MedResearcher-R1 | End-to-End | Medical KG-grounded trajectory synthesis, 32B model, MedBrowseComp SOTA |
 
 ---
 

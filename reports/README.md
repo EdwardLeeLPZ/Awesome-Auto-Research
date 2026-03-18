@@ -43,17 +43,20 @@ Each report covers:
 | [ai-researcher.md](ai-researcher.md) | AI-Researcher (HKUDS) | NeurIPS 2025 Spotlight; full lifecycle from survey to manuscript |
 | [agent-laboratory.md](agent-laboratory.md) | Agent Laboratory | End-to-end research with specialized multi-agent architecture |
 | [biomni.md](biomni.md) | Biomni (Stanford SNAP) | General-purpose biomedical AI agent with datalake retrieval |
+| [medresearcher-r1.md](medresearcher-r1.md) | MedResearcher-R1 (AQ-MedAI) | Medical KG-grounded trajectory synthesis; SOTA on MedBrowseComp; open 32B model |
 
 ### 📚 Deep Research & Literature Synthesis
 
 | Report | Project | Description |
 |--------|---------|-------------|
+| [deep-research.md](deep-research.md) | deep-research (dzhng / Aomni) | 18 600-star TypeScript reference scaffold; recursive depth/breadth deep research |
 | [storm.md](storm.md) | STORM (Stanford OVAL) | Wikipedia-like article generation with multi-perspective question asking |
 | [gpt-researcher.md](gpt-researcher.md) | GPT Researcher | Autonomous deep web and local file research agent |
 | [deerflow.md](deerflow.md) | DeerFlow (ByteDance) | LangGraph-based deep research framework with InfoQuest web module |
 | [paperqa2.md](paperqa2.md) | PaperQA2 (Future House) | High-accuracy iterative RAG for scientific literature |
 | [openscholar.md](openscholar.md) | OpenScholar | 45M paper retrieval-augmented LM; published in Nature |
 | [open-deep-research.md](open-deep-research.md) | Open Deep Research (LangChain) | Official LangChain deep research reference implementation |
+| [cognitivekernel-pro.md](cognitivekernel-pro.md) | CognitiveKernel-Pro (Tencent AI Lab) | SFT-trained Qwen3-8B deep research agent; outperforms RL-trained models on GAIA |
 
 ### ⚙️ Automated Experiment & Code Agents
 
