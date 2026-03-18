@@ -359,13 +359,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
 
 ## 📈 Star History
 
-> The free `api.star-history.com` embed renders one repo at a time reliably. Charts are split by scale to keep all lines readable. Click any chart to open the full interactive view.
-
-**AutoGPT** (170k+ ⭐ — shown separately due to scale):
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date)](https://star-history.com/#Significant-Gravitas/AutoGPT&Date)
-
-**Research-specific tools** (comparable scale — OpenHands · Aider · GPT Researcher · STORM · SWE-agent · AI-Scientist · DeerFlow · PaperQA2):
+Star growth of the leading research-specific tools since their respective launch dates.  
+*AutoGPT (170k+ ⭐) is excluded from the chart to keep the research tools readable — [view full comparison including AutoGPT →](https://star-history.com/#Significant-Gravitas/AutoGPT&All-Hands-AI/OpenHands&Aider-AI/aider&assafelovic/gpt-researcher&stanford-oval/storm&SWE-agent/SWE-agent&SakanaAI/AI-Scientist&bytedance/deer-flow&Future-House/paper-qa&karpathy/autoresearch&Date)*
 
 [![Star History Chart](https://api.star-history.com/svg?repos=All-Hands-AI/OpenHands,Aider-AI/aider,assafelovic/gpt-researcher,stanford-oval/storm,SWE-agent/SWE-agent,SakanaAI/AI-Scientist,bytedance/deer-flow,Future-House/paper-qa&type=Date)](https://star-history.com/#All-Hands-AI/OpenHands&Aider-AI/aider&assafelovic/gpt-researcher&stanford-oval/storm&SWE-agent/SWE-agent&SakanaAI/AI-Scientist&bytedance/deer-flow&Future-House/paper-qa&Date)
 
