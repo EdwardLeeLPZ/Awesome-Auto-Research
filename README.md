@@ -8,9 +8,11 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-blue?style=flat-square)](#)
-[![Reports](https://img.shields.io/badge/in--depth%20reports-21-orange?style=flat-square)](reports/)
+[![Reports](https://img.shields.io/badge/in--depth%20reports-23-orange?style=flat-square)](reports/)
 
 Autonomous research systems have gone from weekend experiments to NeurIPS Spotlight papers in under two years. This repository catalogues 30+ active projects across the full spectrum — lightweight literature scrapers, multi-agent experiment runners, and end-to-end systems that can take a vague research direction and output a reviewable manuscript — together with a [capability comparison matrix](#-capability-matrix), a [pipeline map](#️-research-automation-landscape), a [tool selection guide](#-how-to-choose-the-right-tool), and **[in-depth technical reports](reports/)** for the most impactful systems.
+
+**Latest Additions (2026-03-19):** EvoScientist (RL-based self-evolution), ToolUniverse (AI scientist ecosystem)
 
 </div>
 
@@ -79,6 +81,8 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🌟 | [OpenScholar](https://github.com/AkariAsai/OpenScholar) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 🌟 | [AutoDidact](https://github.com/dCaples/AutoDidact) | ⚠️ | ✅ | ❌ | ❌ | ⚠️ | ❌ | ✅ |
 | 🌟 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ✅ | ✅ |
+| 🌟 | [EvoScientist](https://github.com/EvoScientist/EvoScientist) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
+| 🌟 | [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) | ✅ | ⚠️ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ |
 
 > **Tier legend:**  🏆 Landmark — defined or significantly shaped the field  ·  🌟 Flagship — mature, widely adopted, strong results  ·  🔬 Notable — active, specialized, or emerging  
 > **Capability legend:**  ✅ Native  ·  ⚠️ Partial / requires setup  ·  ❌ Not supported
@@ -96,6 +100,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | **[AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)**<br><sub>SakanaAI · 2025</sub> | ![](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=social) | BFTS (beam-search agentic tree search) + AIDE for code generation | First AI-written paper accepted through standard peer review | [📄](reports/ai-scientist-v2.md) |
 | 🌟 | **[AI-Researcher](https://github.com/HKUDS/AI-Researcher)**<br><sub>HKUDS · NeurIPS 2025 Spotlight</sub> | ![](https://img.shields.io/github/stars/HKUDS/AI-Researcher?style=social) | LiteLLM multi-provider + Docker-sandboxed execution + Gradio UI | Broadest LLM compatibility; strong reproducibility focus | [📄](reports/ai-researcher.md) |
 | 🌟 | **[Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory)**<br><sub>SamuelSchmidgall · 2024</sub> | ![](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=social) | Role-specialized multi-agent: Professor → PhD Student → Reviewer | arXiv + HuggingFace integration for literature and datasets | [📄](reports/agent-laboratory.md) |
+| 🌟 | **[EvoScientist](https://github.com/EvoScientist/EvoScientist)**<br><sub>EvoScientist Team · 2026</sub> | ![](https://img.shields.io/github/stars/EvoScientist/EvoScientist?style=social) | Six-agent team (plan, research, code, analyze, write, review) with RL self-improvement | ICAIS 2025 Best Paper; #1 on DeepResearch Bench II; human-on-the-loop paradigm | [📄](reports/evoscientist.md) |
 | 🔬 | **[MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1)**<br><sub>AQ-MedAI · 2025</sub> | ![](https://img.shields.io/github/stars/AQ-MedAI/MedResearcher-R1?style=social) | KG-grounded multi-hop QA synthesis + trajectory generation for medical AI training | SOTA on MedBrowseComp; open 32B model + full training data released | [📄](reports/medresearcher-r1.md) |
 | 🔬 | **[Biomni](https://github.com/snap-stanford/Biomni)**<br><sub>Stanford SNAP · 2025</sub> | ![](https://img.shields.io/github/stars/snap-stanford/Biomni?style=social) | Biomedical datalake + know-how library + sandboxed code execution | Domain-specialized for biology & medicine; multimodal inputs | [📄](reports/biomni.md) |
 | 🔬 | **[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)**<br><sub>wanshuiyin</sub> | ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=social) | Claude Code + MCP servers; runs overnight unattended | Cross-model review loops; Zotero + Obsidian integration | — |
@@ -118,6 +123,7 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🌟 | **[PaperQA2](https://github.com/Future-House/paper-qa)**<br><sub>Future House · ICLR 2024</sub> | ![](https://img.shields.io/github/stars/Future-House/paper-qa?style=social) | Iterative RAG over full-text PDFs using tantivy search index | Highest-accuracy Q&A from local scientific papers; outperforms Perplexity Pro | [📄](reports/paperqa2.md) |
 | 🌟 | **[OpenScholar](https://github.com/AkariAsai/OpenScholar)**<br><sub>Asai et al. · Nature 2024</sub> | ![](https://img.shields.io/github/stars/AkariAsai/OpenScholar?style=social) | Dense retrieval (Contriever) over 45M open-access papers | Outperforms PaperQA2 on scientific Q&A; evidence-grounded answers | [📄](reports/openscholar.md) |
 | 🌟 | **[Open Deep Research](https://github.com/langchain-ai/open_deep_research)**<br><sub>LangChain · 2025</sub> | ![](https://img.shields.io/github/stars/langchain-ai/open_deep_research?style=social) | LangGraph workflow + MCP tool plugins + LangSmith tracing | Reference implementation from LangChain; highly configurable | [📄](reports/open-deep-research.md) |
+| 🌟 | **[ToolUniverse](https://github.com/mims-harvard/ToolUniverse)**<br><sub>Harvard Medical School · 2025</sub> | ![](https://img.shields.io/github/stars/mims-harvard/ToolUniverse?style=social) | AI-Tool Interaction Protocol; 1,000+ tools (ML models, datasets, APIs, packages) | Universal LLM support (Claude, GPT, Gemini, Qwen, Deepseek); 68+ pre-built research skills | [📄](reports/tooluniverse.md) |
 | 🔬 | **[Tongyi DeepResearch](https://github.com/Alibaba-NLP/DeepResearch)**<br><sub>Alibaba NLP · 2025</sub> | ![](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social) | RL-trained agentic LLM (30.5B, GRPO) | SOTA on long-horizon information-seeking benchmarks; open-weight model | — |
 | 🔬 | **[DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent)**<br><sub>Skywork AI</sub> | ![](https://img.shields.io/github/stars/SkyworkAI/DeepResearchAgent?style=social) | Hierarchical multi-agent + Autogenesis self-evolution | Planning agent coordinates specialized lower-level agents | — |
 | 🔬 | **[II-Researcher](https://github.com/Intelligent-Internet/ii-researcher)**<br><sub>Intelligent Internet · 2025</sub> | ![](https://img.shields.io/github/stars/Intelligent-Internet/ii-researcher?style=social) | BAML-structured LLM functions + multi-provider web search + async reflection loop | 84.12% on Frames multi-hop benchmark; MCP server support; pip-installable | [📄](reports/ii-researcher.md) |
