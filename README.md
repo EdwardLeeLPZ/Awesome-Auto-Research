@@ -71,18 +71,17 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | 🏆 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
 | 🏆 | [deep-research](https://github.com/dzhng/deep-research) | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ | ⚠️ |
 | 🏆 | [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
+| 🏆 | [RD-Agent](https://github.com/microsoft/RD-Agent) | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ⚠️ |
 | 🏆 | [Open Deep Research](https://github.com/langchain-ai/open_deep_research) | ✅ | ❌ | ⚠️ | ✅ | ❌ | ❌ | ✅ |
 | 🏆 | [PaperQA2](https://github.com/Future-House/paper-qa) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 🏆 | [MiroThinker](https://github.com/MiroMindAI/MiroThinker) | ✅ | ❌ | ❌ | ✅ | ❌ | ⚠️ | ✅ |
 | 🏆 | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
-| 🏆 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
-| 🏆 | [DATAGEN](https://github.com/starpig1129/DATAGEN) | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 | 🌟 | [Biomni](https://github.com/snap-stanford/Biomni) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ⚠️ |
 | 🌟 | [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
+| 🌟 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | 🌟 | [OpenScholar](https://github.com/AkariAsai/OpenScholar) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 🌟 | [EvoScientist](https://github.com/EvoScientist/EvoScientist) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ⚠️ |
-| 🌟 | [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) | ✅ | ⚠️ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ |
-| 🔬 | [BioAgents](https://github.com/bio-xyz/BioAgents) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| 🌟 | [DATAGEN](https://github.com/starpig1129/DATAGEN) | ❌ | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 
 > **Tier legend:**  🏆 Landmark — defined or significantly shaped the field  ·  🌟 Flagship — mature, widely adopted, strong results  ·  🔬 Notable — active, specialized, or emerging  
 > **Capability legend:**  ✅ Native  ·  ⚠️ Partial / requires setup  ·  ❌ Not supported
@@ -96,14 +95,15 @@ The **Tier** column groups systems by overall impact and maturity — this same 
 | Tier | Project | Stars | Core Approach | Notes | Report |
 |:----:|---------|-------|---------------|-------|:------:|
 | 🏆 | **[autoresearch](https://github.com/karpathy/autoresearch)**<br><sub>Andrej Karpathy</sub> | ![](https://img.shields.io/github/stars/karpathy/autoresearch?style=social) | 630-line agent; reads its own training script, forms hypotheses, modifies code, runs hundreds of experiments overnight | Minimal & self-contained; seminal proof-of-concept | — |
-| 🏆 | **[DATAGEN](https://github.com/starpig1129/DATAGEN)**<br><sub>starpig1129 · 2025</sub> | ![](https://img.shields.io/github/stars/starpig1129/DATAGEN?style=social) | Multi-agent orchestration: hypothesis generation → data analysis → visualization → report generation | LangChain + LangGraph; advanced state tracking via Note Taker agent | [📄](reports/datagen.md) |
 | 🏆 | **[AI-Scientist](https://github.com/SakanaAI/AI-Scientist)**<br><sub>SakanaAI · 2024</sub> | ![](https://img.shields.io/github/stars/SakanaAI/AI-Scientist?style=social) | Template-driven idea generation → experiment loop → LaTeX write-up → agentic peer review | First comprehensive end-to-end system; multiple ML research templates | [📄](reports/ai-scientist.md) |
+| 🏆 | **[RD-Agent](https://github.com/microsoft/RD-Agent)**<br><sub>Microsoft Research · 2025</sub> | ![](https://img.shields.io/github/stars/microsoft/RD-Agent?style=social) | Dual-agent R&D automation: Research agent (ideation) + Development agent (implementation) with iterative loops | #1 on MLE-bench (30.22%); NeurIPS 2025; data-centric multi-domain framework | [📄](reports/rd-agent.md) |
 | 🏆 | **[AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)**<br><sub>SakanaAI · 2025</sub> | ![](https://img.shields.io/github/stars/SakanaAI/AI-Scientist-v2?style=social) | BFTS (beam-search agentic tree search) + AIDE for code generation | First AI-written paper accepted through standard peer review | [📄](reports/ai-scientist-v2.md) |
+| 🌟 | **[DATAGEN](https://github.com/starpig1129/DATAGEN)**<br><sub>starpig1129 · 2025</sub> | ![](https://img.shields.io/github/stars/starpig1129/DATAGEN?style=social) | Multi-agent orchestration: hypothesis generation → data analysis → visualization → report generation | LangChain + LangGraph; advanced state tracking via Note Taker agent | [📄](reports/datagen.md) |
 | 🌟 | **[AI-Researcher](https://github.com/HKUDS/AI-Researcher)**<br><sub>HKUDS · NeurIPS 2025 Spotlight</sub> | ![](https://img.shields.io/github/stars/HKUDS/AI-Researcher?style=social) | LiteLLM multi-provider + Docker-sandboxed execution + Gradio UI | Broadest LLM compatibility; strong reproducibility focus | [📄](reports/ai-researcher.md) |
 | 🌟 | **[Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory)**<br><sub>SamuelSchmidgall · 2024</sub> | ![](https://img.shields.io/github/stars/SamuelSchmidgall/AgentLaboratory?style=social) | Role-specialized multi-agent: Professor → PhD Student → Reviewer | arXiv + HuggingFace integration for literature and datasets | [📄](reports/agent-laboratory.md) |
 | 🌟 | **[EvoScientist](https://github.com/EvoScientist/EvoScientist)**<br><sub>EvoScientist Team · 2026</sub> | ![](https://img.shields.io/github/stars/EvoScientist/EvoScientist?style=social) | Six-agent team (plan, research, code, analyze, write, review) with RL self-improvement | ICAIS 2025 Best Paper; #1 on DeepResearch Bench II; human-on-the-loop paradigm | [📄](reports/evoscientist.md) |
+| 🌟 | **[Biomni](https://github.com/snap-stanford/Biomni)**<br><sub>Stanford SNAP · 2025</sub> | ![](https://img.shields.io/github/stars/snap-stanford/Biomni?style=social) | Biomedical datalake + know-how library + sandboxed code execution | Domain-specialized for biology & medicine; multimodal inputs | [📄](reports/biomni.md) |
 | 🔬 | **[MedResearcher-R1](https://github.com/AQ-MedAI/MedResearcher-R1)**<br><sub>AQ-MedAI · 2025</sub> | ![](https://img.shields.io/github/stars/AQ-MedAI/MedResearcher-R1?style=social) | KG-grounded multi-hop QA synthesis + trajectory generation for medical AI training | SOTA on MedBrowseComp; open 32B model + full training data released | [📄](reports/medresearcher-r1.md) |
-| 🔬 | **[Biomni](https://github.com/snap-stanford/Biomni)**<br><sub>Stanford SNAP · 2025</sub> | ![](https://img.shields.io/github/stars/snap-stanford/Biomni?style=social) | Biomedical datalake + know-how library + sandboxed code execution | Domain-specialized for biology & medicine; multimodal inputs | [📄](reports/biomni.md) |
 | 🔬 | **[BioAgents](https://github.com/bio-xyz/BioAgents)**<br><sub>bio-xyz · 2025</sub> | ![](https://img.shields.io/github/stars/bio-xyz/BioAgents?style=social) | Specialized literature + analysis agents for biological sciences; state-of-the-art on BixBench | SOTA analysis agent (48.78% open-answer); configurable dual-agent backend | [📄](reports/bioagents.md) |
 | 🔬 | **[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep)**<br><sub>wanshuiyin</sub> | ![](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=social) | Claude Code + MCP servers; runs overnight unattended | Cross-model review loops; Zotero + Obsidian integration | — |
 | 🔬 | **[Idea2Paper](https://github.com/AgentAlphaAGI/Idea2Paper)**<br><sub>AgentAlphaAGI</sub> | ![](https://img.shields.io/github/stars/AgentAlphaAGI/Idea2Paper?style=social) | Multi-agent + Knowledge Graph alignment for novelty checking | Semantic Scholar + arXiv grounding; idea → draft pipeline | — |
