@@ -24,16 +24,27 @@ MODEL="${COPILOT_MODEL:-claude-sonnet-4.6}"
 
 DATE=$(date +%Y-%m-%d)
 
-# ─── 认证：cron 环境无交互 session，需显式注入 GH_TOKEN ──────────────────────
-# copilot --acp 的 session/new 需要 GitHub 认证，cron 下默认不继承 token。
-# gh auth token 读取 ~/.config/gh/hosts.yml（HOME 在 user crontab 下正常可用）。
-if [[ -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
-    _gh_token=$(gh auth token 2>/dev/null || true)
-    if [[ -n "$_gh_token" ]]; then
+# ─── 认证：cron 环境无交互 session，需显式注入 COPILOT_GITHUB_TOKEN ──────────
+# 根本原因：copilot config.json 中 last_logged_in_user 是 mercedes-benz.ghe.com（GHE）。
+# 即使注入 GH_TOKEN，copilot 仍会尝试连接 GHE 服务器 → 无 GHE keyring → Authentication required。
+# 解决方案：注入 COPILOT_GITHUB_TOKEN（最高优先级），完全绕过 config.json 的 GHE 配置。
+# token 从 ~/.copilot-gh-token 文件读取（github.com OAuth token，prefix=gho_）。
+if [[ -z "${COPILOT_GITHUB_TOKEN:-}" && -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
+    TOKEN_FILE="${HOME}/.copilot-gh-token"
+    if [[ -f "$TOKEN_FILE" && -s "$TOKEN_FILE" ]]; then
+        _gh_token=$(cat "$TOKEN_FILE" | tr -d '[:space:]')
+        export COPILOT_GITHUB_TOKEN="$_gh_token"
         export GH_TOKEN="$_gh_token"
-        echo "[daily_update] GH_TOKEN injected via gh auth token"
+        echo "[daily_update] COPILOT_GITHUB_TOKEN injected from $TOKEN_FILE (len=${#_gh_token})"
     else
-        echo "[daily_update] WARNING: could not obtain GH_TOKEN — ACP session/new may fail" >&2
+        _gh_token=$(gh auth token 2>/dev/null || true)
+        if [[ -n "$_gh_token" ]]; then
+            export COPILOT_GITHUB_TOKEN="$_gh_token"
+            export GH_TOKEN="$_gh_token"
+            echo "[daily_update] COPILOT_GITHUB_TOKEN injected via gh auth token"
+        else
+            echo "[daily_update] WARNING: could not obtain COPILOT_GITHUB_TOKEN — ACP session/new may fail" >&2
+        fi
     fi
 fi
 
