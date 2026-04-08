@@ -13,6 +13,10 @@
 #   DELEGATE_TIMEOUT     — Copilot session 超时秒数（默认 7200 = 2小时）
 #   COPILOT_MODEL        — 使用的模型（默认 claude-sonnet-4.6）
 
+# ─── DISABLED 2026-04-01: ACP path migrated to .quacker, cron entry pending removal ───
+echo "[$(date -Iseconds)] daily_update.sh DISABLED — skipping. Remove cron entry to clean up." >&2
+exit 0
+
 set -euo pipefail
 
 # ─── 配置 ─────────────────────────────────────────────────────────────────────
